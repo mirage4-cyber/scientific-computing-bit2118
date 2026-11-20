@@ -5,7 +5,7 @@ Individual repository for the BIT 2118 Scientific Computing group work.
 Annah Waitita
 BSCCS/2025/67059
 
-Tasks covered: Task 15 (Numerical Differentiation) and Task 17 (ODEs, Euler Method)
+Tasks covered: Task 2-20
 
 ## Repository structure
 
