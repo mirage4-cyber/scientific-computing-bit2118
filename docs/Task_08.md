@@ -1,41 +1,31 @@
-# Task 8: Iterative Methods for Linear Systems
+# Task 8 – Iterative Methods for Linear Systems
 
-## 1. Mathematical concept
-Iterative Methods for Linear Systems uses numerical/computational methods to solve a problem that can be represented using mathematical values, functions, matrices, approximations or simulations.
+## 1. Mathematical Concept
 
-## 2. Example
-The program demonstrates the concept using a small numerical example. See the printed results in the Python program and the relevant formula used in the code.
+The program models temperatures at interior points between two fixed-temperature boundaries. It solves the system using Jacobi and Gauss-Seidel iteration, compares the results with a direct solution and plots the convergence history.
 
-## 3. Real-world applications
-- Steady-state temperature distribution
-- Scientific measurements and modelling
-- Engineering, business analytics or computational research
+## 2. Inputs and Mathematical Operation
 
-## 4. Real-world problem and solution approach
-**Problem:** Steady-state temperature distribution requires numerical calculations that would be tedious or error-prone to perform manually.
+Inputs are the coefficient matrix, boundary influence vector, initial estimate, tolerance and maximum iteration count. Each method repeatedly updates the unknown temperatures until the maximum change is below the tolerance or the iteration limit is reached.
 
-**Approach:** Represent the input data in Python, apply the method for this task, print the calculated result, and—where applicable—visualize the data or convergence using Matplotlib.
+## 3. Output and Interpretation
 
-## 5. Program
-Program file: `code/Task_08_iterative_methods_for_linear_systems.py`
+The calculated values estimate the steady-state temperatures along the grid. The convergence graph shows how the maximum change decreases as iterations proceed. Faster reduction indicates faster convergence.
 
-The Python source file contains comments describing the inputs and the mathematical operation.
+**Output verification:** Run the listed Python program and insert its actual console output here. For tasks that produce a graph, include a screenshot of the graph and explain its main trend. Do not use estimated or invented output values.
 
-## 6. Input/parameter change
-The program includes a changed input or parameter (or a comparison of methods/parameters). Run the program and compare the original and changed results. Explain that changing the input changes the numerical output according to the mathematical relationship.
+## 4. Changing an Input or Parameter
 
-## 7. Output interpretation
-The printed values represent the calculated result for the supplied data. Residuals, error estimates or comparisons (where printed) help assess numerical accuracy.
+Change the tolerance from 1e-8 to 1e-5. The method will usually stop earlier because a less precise solution is accepted.
 
-## 8. Graph interpretation
-Where the program creates a graph, use the axes and plotted values to interpret the trend, approximation, convergence or accumulated quantity. A graph is not produced for tasks where a graph is not necessary to the example.
+## 5. Modified Real-World Case
 
-## 9. Modified real-world case
-**Assumption:** The sample data represent a simplified real-world scenario and are used to demonstrate the technique.
+**Application:** Steady-state temperature distribution.
 
-**Modified input:** Change the values or parameters in the program (identified in its comments) and rerun it.
+The same iterative approach can estimate steady-state temperatures in a larger heat-transfer grid where direct factorization may be expensive.
 
-**Expected interpretation:** The output changes because the input data or model parameter changes. Record the actual output from your run in this section before submitting your repository.
+**Modified-case documentation:** Record the new input data, assumptions, actual output and interpretation after implementing the modified case in the Python program.
 
----
-*This report is a starting draft. Run the program and replace/extend the output interpretation with your actual execution results. The assignment requires original documentation and a modified case.*
+## Program File
+
+`code/Task_08_iterative_methods.py`
