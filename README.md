@@ -2,10 +2,9 @@
 
 Individual repository for the BIT 2118 Scientific Computing group work.
 
-**Name:** Anna
+**Name:** Annah Waitita BSCCS/2025/67059
 **Course:** BIT 2118 Scientific Computing, Mount Kenya University
 
-Every task has the same structure: the original program from the handout, a write-up in `docs/` (inputs and operation, output, interpretation, a changed parameter, and a modified real-world case), and a second program that holds the parameter change and the new case.
 
 ## Repository structure
 
